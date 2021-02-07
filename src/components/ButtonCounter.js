@@ -14,9 +14,9 @@ const ButtonCounter = () => {
             className="ui black button animated"
             onClick={() => onButtonUpClick(count)}
           >
-            <div class="visible content">Count Up</div>
-            <div class="hidden content">
-              <i class="arrow up icon"></i>
+            <div className="visible content">Count Up</div>
+            <div className="hidden content">
+              <i className="arrow up icon"></i>
             </div>
           </div>
         </div>

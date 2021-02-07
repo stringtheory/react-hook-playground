@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import Accordion from './components/Accordion';
+import ButtonCounter from './components/ButtonCounter';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const items = [
+  {
+    title: 'Why did the math book look so sad?',
+    content: 'Because of all of its problems!'
+  },
+  {
+    title: 'Why are elevator jokes so classic and good?',
+    content: 'They work on many levels.'
+  },
+  {
+    title: 'How do you organize a space party?',
+    content: 'You planet.'
+  },
+];
 
-export default App;
+export default () => {
+  return (
+    <main className="ui container">
+      <h1>React Hook Playground</h1>
+      <h2 className="ui dividing header">Accordion</h2>
+      <Accordion items={items} />
+
+      <h2 className="ui dividing header">Button Counter</h2>
+      <ButtonCounter />
+    </main>
+  );
+};

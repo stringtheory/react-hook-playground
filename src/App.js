@@ -1,6 +1,7 @@
 import React from 'react';
 import Accordion from './components/Accordion';
 import ButtonCounter from './components/ButtonCounter';
+import Search from './components/Search';
 import './App.css';
 
 const items = [
@@ -22,6 +23,9 @@ export default () => {
   return (
     <main className="ui container">
       <h1>React Hook Playground</h1>
+      <h2 className="ui dividing header">Search</h2>
+      <Search />
+
       <h2 className="ui dividing header">Accordion</h2>
       <Accordion items={items} />
 

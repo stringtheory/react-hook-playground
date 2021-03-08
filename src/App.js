@@ -5,8 +5,9 @@ import ButtonCounter from './components/ButtonCounter';
 import ColorDropdown from './components/ColorDropdown';
 import Dropdown from "./components/Dropdown";
 import Search from "./components/Search";
+import UserList from "./components/UserList";
 // Example Data
-import { colorListData } from "./data/colors";
+import { colorData, colorListData } from "./data/colors";
 import { dadJokes } from "./data/dadJokes";
 import "./App.css";
 import Translate from "./components/Translate";
@@ -14,27 +15,27 @@ import Translate from "./components/Translate";
 
 export default () => {
   const [selectedColor, setSelectedColor] = useState(colorListData[0]);
-  const [showColorDropdown, setShowColorDropdown] = useState(true);
 
   return (
     <main className="ui container">
       <h1>React Hook Playground</h1>
+      <h2 className="ui dividing header">Mock User List from API</h2>
+      <UserList/>
+
       <h2 className="ui dividing header">Translate Organism</h2>
       <Translate/>
 
       <h2 className="ui dividing header">Color Dropdown</h2>
-      {showColorDropdown ? (
-        <ColorDropdown
-          onSelectedChange={setSelectedColor}
-          options={colorListData}
-          selected={selectedColor}
-        />) : null
-      }
-      <p>
-      <button
-        className="ui button"
-        onClick={() => setShowColorDropdown(!showColorDropdown)}>Toggle Dropdown</button>
-      </p>
+      <ColorDropdown
+        onSelectedChange={setSelectedColor}
+        options={colorListData}
+        selected={selectedColor}
+      />
+      <Dropdown
+        onSelectedChange={setSelectedColor}
+        options={colorData}
+        selected={selectedColor}
+      />
 
       <h2 className="ui dividing header">Search</h2>
       <Search />

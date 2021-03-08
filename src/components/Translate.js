@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Dropdown from "./Dropdown";
+import ConvertLanguage from "./ConvertLanguage";
 
 const options = [
   {
@@ -21,16 +22,24 @@ const Translate = () => {
   const [text, setText] = useState("");
 
   return (
-    <div>
-      <input
-        value={text}
-        onChange={(e) => setText(e.target.value)} />
+    <div className="ui segment">
+      <div className="ui form">
+        <div className="field">
+          <label>Enrter Text</label>
+          <input
+            value={text}
+            onChange={(e) => setText(e.target.value)} />
+        </div>
+      </div>
       <Dropdown
         options={options}
         label="Select a Language"
         selected={language}
         onSelectedChange={selectedLanguage}
       />
+      <div className="ui divider"></div>
+      <h3 className="ui header">Output:</h3>
+      <ConvertLanguage language={language} text={text} />
     </div>
   );
 };

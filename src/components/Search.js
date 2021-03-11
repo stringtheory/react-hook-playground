@@ -37,7 +37,6 @@ const Search = () => {
   }, [term]);
 
   const renderedResults = results.map((result) => {
-    // TODO(dew): Prevent XXS Attack - by sanitizing results from GET, replace dangerouslySetInnerHTML
     return (
       <div key={result.pageid} className="item">
         <div className="right floated content">
@@ -60,22 +59,23 @@ const Search = () => {
   return (
     <React.Fragment>
       <div className="ui container">
-        <p>Use the Wikipedia API to return article content relating to a user's serch term.</p>
-      </div>
-      <div className="ui form">
-        <div className="field">
-          <label>Enter Search Term</label>
-          <div className="ui large icon input">
-            <input value={term}
-                   placeholder="cat, flower, taco...."
-                   onChange={(e) => setTerm(e.target.value)}
-                   className="ui input"
-            />
-            <i className="search icon"></i>
+        <div className="ui form raised very padded black segment">
+          <div className="field">
+            <label>Enter Search Term</label>
+            <div className="ui large icon input">
+              <input value={term}
+                     placeholder="cat, flower, taco...."
+                     onChange={(e) => setTerm(e.target.value)}
+                     className="ui input"
+              />
+              <i className="search icon"></i>
+            </div>
           </div>
         </div>
       </div>
-      <div className="ui relaxed divided list">{renderedResults}</div>
+      <div className="ui container">
+        <div className="ui relaxed divided list">{renderedResults}</div>
+      </div>
     </React.Fragment>
   );
 };

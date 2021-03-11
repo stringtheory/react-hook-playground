@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b18bbba4-aac8-4f8a-b1eb-f160c5c008f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ConvertLanguage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UserList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Translate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Translate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,8 @@
       <workItem from="1613250007735" duration="582000" />
       <workItem from="1613251618803" duration="556000" />
       <workItem from="1613436406448" duration="20644000" />
-      <workItem from="1614357059190" duration="37938000" />
+      <workItem from="1614357059190" duration="45043000" />
+      <workItem from="1615398743215" duration="11665000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap in initial components, Update favicon, add stylesheet for Semantic UI overrides.">
       <created>1612731290699</created>
@@ -124,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615164831431</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added User List Component with async await call to external MockAPI. Created User List.">
+      <created>1615186491788</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615186491788</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,20 +157,15 @@
     <MESSAGE value="Update button size and update manifest." />
     <MESSAGE value="add boilerplate to search component" />
     <MESSAGE value="Added color data, added color dropdown, updated image file, added translation component." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added color data, added color dropdown, updated image file, added translation component." />
+    <MESSAGE value="Added User List Component with async await call to external MockAPI. Created User List." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added User List Component with async await call to external MockAPI. Created User List." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Search.js</url>
-          <line>47</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Dropdown.js</url>
           <line>10</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
